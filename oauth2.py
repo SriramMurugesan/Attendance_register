@@ -43,4 +43,4 @@ async def google_auth(token: str):
         email=user_info["email"],
         picture=user_info["picture"]
     )
-    return {"message": "User authenticated", "user": user.dict()}
+    return {"message": "User authenticated", "user": user.model_dump()}
